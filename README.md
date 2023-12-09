@@ -33,3 +33,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 `/node_modules/primeflex/primeflex.css;`<br><br>
 `npm install primeicons`<br>
 `import 'primeicons/primeicons.css';`<br><br>
+
+# Import docs link
+
+`https://primereact.org/button/`<br>
+`https://primeflex.org/fontsize`<br>
+`https://primereact.org/icons/` <br>
