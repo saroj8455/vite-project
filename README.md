@@ -24,3 +24,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   </React.StrictMode>
 );
 ```
+
+# Install dependency
+
+`npm install primereact`<br>
+`import "primereact/resources/themes/lara-light-cyan/theme.css";`<br><br>
+`npm i primeflex`<br>
+`/node_modules/primeflex/primeflex.css;`<br><br>
+`npm install primeicons`<br>
+`import 'primeicons/primeicons.css';`<br><br>
