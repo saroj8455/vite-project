@@ -2,7 +2,7 @@ import { Button } from 'primereact/button';
 export default function Landing() {
   return (
     <div>
-      <div className='grid flex  min-h-screen  bg-primary   p-4 '>
+      <div className='grid flex  min-h-screen  bg-primary px-4'>
         <div className='col-12 md:col-6 lg:col-6 flex flex-column justify-content-center'>
           <div className='text-center border-round-sm bg-primary font-bold'>
             <div className='card flex flex-column align-items-center  '>

@@ -16,6 +16,12 @@ body {
   /* Additional styles as needed */
 }
 
+::ng-deep .p-menubar {
+  background-color: var(--primary-color) !important;
+  color: var(--primary-color-text) !important;
+  padding: 1.5rem 0 !important;
+}
+
 .hero {
   max-width: 100%;
   min-height: 100%;
