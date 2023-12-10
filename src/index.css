@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100dvh;
+  line-height: 1.6;
+}
+
+.common-img {
+  max-width: 100%; /* Sets the maximum width of the image to 100% of its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  display: block; /* Ensures images behave as block-level elements */
+  /* Additional styles as needed */
+}
+
+.hero {
+  max-width: 100%;
+  min-height: 100%;
+  background-image: url('https://media.istockphoto.com/id/490453539/photo/malaysian-cuisine-maggi-goreng-mamak.jpg?s=1024x1024&w=is&k=20&c=mQ7PFASeP47Xp9pG_tAFdqhjYDG0La8AHEtrMZMJYvI=');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  object-fit: cover;
+  /* border-radius: px; */
+}
