@@ -39,3 +39,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 `https://primereact.org/button/`<br>
 `https://primeflex.org/fontsize`<br>
 `https://primereact.org/icons/` <br>
+
+## https://xerosource.com/why-api-is-called-twice-in-react/
