@@ -18,6 +18,7 @@ function App() {
     const todo = async () => {
       const resp = await axios.get(apiurl);
       console.log(resp.data);
+      setTitle(`API Call Successful: ${resp.data.title}`);
     };
     return todo;
   }, []);
