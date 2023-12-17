@@ -8,6 +8,7 @@ import Notes from './components/Notes';
 import ActionItem from './components/ActionItem';
 import { testApiCall } from './common/CreateApiCall';
 import axios from 'axios';
+import ApiCallDemo from './components/ApiCallDemo';
 
 function App() {
   const [title, setTitle] = useState('');
@@ -26,6 +27,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <ApiCallDemo />
       <ActionItem title={title} />
       <Notes />
       <Landing />
