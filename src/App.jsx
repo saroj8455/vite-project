@@ -9,6 +9,13 @@ import ActionItem from './components/ActionItem';
 import { testApiCall } from './common/CreateApiCall';
 import axios from 'axios';
 import ApiCallDemo from './components/ApiCallDemo';
+import DatePickerComp from './components/DatePickerComp';
+import NewsEntry from './components/NewsEntry';
+import LoginScreen from './components/LoginScreen';
+import FeaturesItem from './components/FeaturesItem';
+import LoginCarousel from './components/LoginCarousel';
+import SplitScreen from './components/SplitScreen';
+import PaymentGroup from './components/PaymentGroup';
 
 function App() {
   const [title, setTitle] = useState('');
@@ -27,6 +34,13 @@ function App() {
   return (
     <>
       <Navbar />
+      <PaymentGroup />
+      <SplitScreen />
+      <LoginCarousel />
+      <FeaturesItem />
+      <LoginScreen />
+      <NewsEntry />
+      <DatePickerComp />
       <ApiCallDemo />
       <ActionItem title={title} />
       <Notes />
