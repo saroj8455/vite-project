@@ -16,6 +16,7 @@ import FeaturesItem from './components/FeaturesItem';
 import LoginCarousel from './components/LoginCarousel';
 import SplitScreen from './components/SplitScreen';
 import PaymentGroup from './components/PaymentGroup';
+import Invoice from './components/Invoice';
 
 function App() {
   const [title, setTitle] = useState('');
@@ -34,6 +35,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Invoice />
       <PaymentGroup />
       <SplitScreen />
       <LoginCarousel />
