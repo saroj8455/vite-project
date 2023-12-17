@@ -10,6 +10,7 @@ import { testApiCall } from './common/CreateApiCall';
 import axios from 'axios';
 
 function App() {
+  const [title, setTitle] = useState('');
   const apiurl = 'https://jsonplaceholder.typicode.com/todos/1';
 
   // Approcah to prevent api call twice working and test
@@ -24,7 +25,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <ActionItem />
+      <ActionItem title={title} />
       <Notes />
       <Landing />
       <Contact />

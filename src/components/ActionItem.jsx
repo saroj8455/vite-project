@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function ActionItem() {
+export default function ActionItem({ title }) {
   return (
     <>
       <div className='px-4 py-8 md:px-6 lg:px-8 flex justify-content-center align-items-center'>
         <div className='surface-card border-round shadow-2 p-4'>
           <div className='text-900 font-medium mb-2 text-xl'>
-            Title Placeholder
+            Title Placeholder {title}
           </div>
           <p className='mt-0 mb-4 p-0 line-height-3'>
             Nunc mi ipsum faucibus vitae aliquet nec. Lacus sed viverra tellus
