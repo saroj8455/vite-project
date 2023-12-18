@@ -17,6 +17,7 @@ import LoginCarousel from './components/LoginCarousel';
 import SplitScreen from './components/SplitScreen';
 import PaymentGroup from './components/PaymentGroup';
 import Invoice from './components/Invoice';
+import DemoOne from './components/DemoOne';
 
 function App() {
   const [title, setTitle] = useState('');
@@ -35,6 +36,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <DemoOne />
       <Invoice />
       <PaymentGroup />
       <SplitScreen />
