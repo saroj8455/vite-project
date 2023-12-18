@@ -4,7 +4,6 @@ import { InputText } from 'primereact/inputtext';
 import axios from 'axios';
 import { ProgressSpinner } from 'primereact/progressspinner';
 
-const PRICE_PER_ITEM = 5;
 const DUMMY_API = 'https://dummyjson.com/posts/';
 export default function DemoOne() {
   // Initial value for postId
