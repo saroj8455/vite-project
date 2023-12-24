@@ -368,3 +368,5 @@ export function PostBody({ Id }) {
 ##### Output:
 
 ![Alt text](image.png)
+
+## Responsive Images
