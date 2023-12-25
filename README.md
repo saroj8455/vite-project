@@ -370,3 +370,80 @@ export function PostBody({ Id }) {
 ![Alt text](image.png)
 
 ## Responsive Images
+
+## React Query article link
+
+`https://refine.dev/blog/react-query-guide/#performing-basic-data-fetching` <br>
+
+## Reeact Query Configuration and Code Snppets
+
+```jsx
+//app.jsx
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+// Create a instance of QueryClient
+const queryClient = new QueryClient();
+
+<QueryClientProvider client={queryClient}>
+  {/* Component goes here */}
+  <ReactQueryDemo />
+</QueryClientProvider>;
+```
+
+```css
+/* index.css */
+ul {
+  list-style: none;
+}
+ul li {
+  display: flex;
+  align-items: center;
+  gap: 4;
+  padding: 1rem;
+}
+ul li i {
+  margin-right: 0.5rem;
+  margin-top: 0.1rem;
+}
+```
+
+```jsx
+// ReactQueryDemo.jsx
+import React from 'react';
+import { useQuery } from 'react-query';
+import axios from 'axios';
+import { ProgressSpinner } from 'primereact/progressspinner';
+
+const retrievePosts = async () => {
+  const response = await axios.get(
+    'https://jsonplaceholder.typicode.com/posts'
+  );
+  return response.data;
+};
+
+export default function ReactQueryDemo() {
+  const {
+    data: posts,
+    error,
+    isLoading,
+  } = useQuery('postsData', retrievePosts);
+  if (isLoading)
+    return (
+      <div>
+        <ProgressSpinner />
+      </div>
+    );
+  if (error) return <div>An error occurred: {error.message}</div>;
+  return (
+    <div>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>
+            <i className='pi pi-check'></i> {post.title}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+```

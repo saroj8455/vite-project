@@ -20,6 +20,16 @@ import Invoice from './components/Invoice';
 import DemoOne from './components/DemoOne';
 import UseMemo from './components/UseMemo';
 import QueryItem from './components/QueryItem';
+import ReactQueryDemo from './components/ReactQueryDemo';
+// import {
+//   QueryClient,
+//   QueryClientProvider,
+//   useQuery,
+// } from '@tanstack/react-query';
+import { QueryClient, QueryClientProvider } from 'react-query';
+
+// Create a instance of QueryClient
+const queryClient = new QueryClient();
 
 function App() {
   const [title, setTitle] = useState('');
@@ -38,6 +48,10 @@ function App() {
   return (
     <>
       <Navbar />
+      <QueryClientProvider client={queryClient}>
+        <ReactQueryDemo />
+      </QueryClientProvider>
+
       <QueryItem />
       <UseMemo />
       <DemoOne />
