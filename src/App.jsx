@@ -19,6 +19,7 @@ import PaymentGroup from './components/PaymentGroup';
 import Invoice from './components/Invoice';
 import DemoOne from './components/DemoOne';
 import UseMemo from './components/UseMemo';
+import QueryItem from './components/QueryItem';
 
 function App() {
   const [title, setTitle] = useState('');
@@ -37,6 +38,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <QueryItem />
       <UseMemo />
       <DemoOne />
       <Invoice />
